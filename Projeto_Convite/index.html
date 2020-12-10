@@ -15,15 +15,61 @@
             <img class="imagem-convite" src="convite.png" alt=""></h1>           
         </header>
         <main>
-            <section class="conteiner">
-                <form id="formulario"></form>
-                <div id="data-form">
-                    <label for="data">Data: </label>
-                    <input id="data" type="date" placeholder="Selecione a data">
-                </div>
-            
+            <ul>
+                <li class="li-aniversariante">
+                    <h2>Adicione as informações da festa</h2>
+                    <form id="formulario"></form>
+                        <div id="data-form">
+                            <label for="data">Data: </label>
+                            <input class="data" type="date" placeholder="Selecione a data">
+                        </div>
+                        <div id="aniversariante-form">
+                            <label for="aniversariante">Aniversariante: </label>
+                            <input id="aniversariante" type="text" placeholder="Nome do Aniversariante">
+                        </div>
+                        <div id="local-form">
+                            <label for="local">Localização: </label>
+                            <input id="local" type="text" placeholder="Adicione a lozalização" size="40" class="font-local">
+                        </div>
+                        <div id="idade-form">
+                            <label for="idade">Idade: </label>
+                            <input id="idade" type="number" placeholder="Adicione a idade">
+                        </div>
+                        <button id="adicionar-aniversariante" class="botao bto-principal">Adicionar</button>
+                </li>
+                <li class="li-convidado">
+                    <h3>Adicionar novo convidado</h3>
+                    <form id="form-adiciona">
+                        <div id="nome-form">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" name="nome" type="text" placeholder="digite o nome do convidado" class="campo">
+                        </div>
+                        <div id="idade-form">
+                            <label for="idade">Idade:</label>
+                            <input id="idade" name="idade" type="text" placeholder="digite a idade do convidado" class="campo campo-medio">
+                        </div>
+                
+        
+                        <button id="adicionar-convidado" class="botao bto-principal">Adicionar</button>
+                    </form>                    
+                </li>
+                <li class="li-lista">
+                     <h4>Meus Convidados</h4>
+                     <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-convidados">
+                            <tr class="convidado">
 
-            </section>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
         </main>
     </body>
     <script src="index.js"></script>

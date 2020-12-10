@@ -1,3 +1,16 @@
+li {
+    display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #c92f2f;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 h1 {
     text-align: center;
     color: rgb(221, 51, 28);
@@ -7,4 +20,40 @@ h1 {
 }
 img {
     width: 2%;
+}
+#aniversariante-form ,#data-form, #local-form, #idade-form,#nome-form{
+    padding: 15px;
+    font-size: 18px;
+}
+input {
+    
+    font-size: 18px;
+    
+}
+h2, h3, h4 {
+    color: rgb(221, 51, 28);
+    font-size: 25px;
+    padding: 15px;
+}
+button {
+    
+    font-size: 18px;
+}
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+.font-local {
+    width: 300px;
+}
+.table {
+    display: inline;
+    
 }
