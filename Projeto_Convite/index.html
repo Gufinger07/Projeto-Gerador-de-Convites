@@ -6,7 +6,7 @@
         <title>Gerador de Convites</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
-
+        
 
     </head>
     <body>
@@ -15,27 +15,37 @@
             <img class="imagem-convite" src="convite.png" alt=""></h1>           
         </header>
         <main>
-            <ul>
+            <ul class="ul-dados">
                 <li class="li-aniversariante">
                     <h2>Adicione as informações da festa</h2>
                     <form id="formulario"></form>
                         <div id="data-form">
                             <label for="data">Data: </label>
-                            <input class="data" type="date" placeholder="Selecione a data">
+                            <input id="data" type="date" placeholder="Selecione a data">
                         </div>
+                        <div id="hora-form">
+                            <label for="hora">Horário: </label>
+                            <input id="hora" type="time" placeholder="Selecione o dia da semana">
                         <div id="aniversariante-form">
                             <label for="aniversariante">Aniversariante: </label>
                             <input id="aniversariante" type="text" placeholder="Nome do Aniversariante">
                         </div>
                         <div id="local-form">
                             <label for="local">Localização: </label>
-                            <input id="local" type="text" placeholder="Adicione a lozalização" size="40" class="font-local">
+                            <input id="local" type="text" placeholder="Adicione a lozalização" class="font-local">
                         </div>
                         <div id="idade-form">
                             <label for="idade">Idade: </label>
                             <input id="idade" type="number" placeholder="Adicione a idade">
                         </div>
-                        <button id="adicionar-aniversariante" class="botao bto-principal">Adicionar</button>
+                        <div id="opcao-form">
+                            <label for="opcao">Masculino: </label>
+                            <input id="masculino" type="radio" name="opcao">
+                            <label for="opcao">Feminino:</label>
+                            <input id="feminino" type="radio" name="opcao">
+
+                        
+                        <button id="gerar-convite" class="botao-convite">Gerar Convite</button>
                 </li>
                 <li class="li-convidado">
                     <h3>Adicionar novo convidado</h3>
@@ -51,6 +61,8 @@
                 
         
                         <button id="adicionar-convidado" class="botao bto-principal">Adicionar</button>
+                        
+                        
                     </form>                    
                 </li>
                 <li class="li-lista">
@@ -70,7 +82,23 @@
                     </table>
                 </li>
             </ul>
+            <ul class="ul-convite">
+                <li class="fazendo-convite">
+                    <p>A N I V E R S Á R I O</p>
+                    <P class="nome-convite">Nome</P>
+                    <p class="idade-convite"><strong id="idade-mudavel">X</strong> anos </p>
+                    <p class="data-convite">Data</p>
+                    <p class="hora-convite">Horario</p>
+                    <p class="local-convite">Local</p>
+                    
+                </li>
+                
+            </ul>
         </main>
     </body>
+    <footer>
+        <p class="copyright">&copy; Copyright Gustavo Finger - 2020</p>
+    </footer>
     <script src="index.js"></script>
+    <script src="gerar_convite.js"></script>
     </html>
