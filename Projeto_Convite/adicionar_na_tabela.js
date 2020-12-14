@@ -6,7 +6,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     var convidado = obtemconvidadoDoFormulario(form);
 
-    adicionaPacienteNaTabela(convidado);
+    adicionaConvidadoNaTabela(convidado);
 
     form.reset();
 
@@ -25,7 +25,6 @@ function obtemconvidadoDoFormulario(form) {
 function montaTr(convidado) {
     var convidadoTr = document.createElement("tr");
     convidadoTr.classList.add("convidado");
-
     convidadoTr.appendChild(montaTd(convidado.nome, "info-nome"));
     convidadoTr.appendChild(montaTd(convidado.idade, "info-idade"));
     
@@ -40,7 +39,7 @@ function montaTd(dado, classe) {
 
     return td;
 }
-function adicionaPacienteNaTabela(convidado) {
+function adicionaConvidadoNaTabela(convidado) {
     var convidadoTr = montaTr(convidado);
     var tabela = document.querySelector("#tabela-convidados");
     tabela.appendChild(convidadoTr);

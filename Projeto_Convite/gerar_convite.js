@@ -24,6 +24,29 @@ botao_gerar.addEventListener("click", function(event) {
     var novo_local = document.querySelector("#local")
     local_no_convite.textContent = novo_local.value
     
+    var radios = document.getElementsByName("opcao")
 
+    
+    if (radios[0].checked) {
+        adiciona_classe_menino()
+        console.log("Escolheu: Menino" );  
+        return
+    }
+    if(radios[1].checked) {
+        adiciona_classe_menina()
+        console.log("Escolheu: Menina")
+        return
+    }
 })
 
+function adiciona_classe_menino() {
+    var classe_menino = document.getElementById("fazendo-convite")
+    classe_menino.classList.remove("convite-menina")
+    classe_menino.classList.add("convite-menino")
+}
+
+function adiciona_classe_menina() {
+    var classe_menina = document.getElementById("fazendo-convite")
+    classe_menina.classList.remove("convite-menino")
+    classe_menina.classList.add("convite-menina")
+}
