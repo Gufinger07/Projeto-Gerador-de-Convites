@@ -26,6 +26,7 @@
                         <div id="hora-form">
                             <label for="hora">Horário: </label><br>
                             <input id="hora" type="time" placeholder="Selecione o dia da semana">
+                        </div>
                         <div id="aniversariante-form">
                             <label for="aniversariante">Aniversariante: </label><br>
                             <input id="aniversariante" type="text" placeholder="Nome do Aniversariante">
@@ -36,15 +37,16 @@
                         </div>
                         <div id="idade-form">
                             <label for="idade">Idade: </label><br>
-                            <input id="idade" type="number" placeholder="Adicione a idade">
+                            <input id="idade" type="text" placeholder="Adicione a idade">
                         </div>
                         <div id="opcao-form">
                             <label for="opcao">Masculino: </label>
-                            <input id="masculino" type="radio" name="opcao" >
+                            <input id="masculino" type="radio" name="opcao" checked>
                             <label for="opcao">Feminino:</label>
                             <input id="feminino" type="radio" name="opcao" >
                         </div>
                         <button id="gerar-convite" class="botao-convite">Gerar Convite</button>
+                        <p class="mensagem-erro"></p>
                                 
                 </li>
                 <li class="li-convidado">
@@ -81,8 +83,6 @@
                         </tbody>
                     </table>
                 </li>
-            </ul>
-            <ul class="ul-convite">
                 <li id="fazendo-convite" >
                     <p>A N I V E R S Á R I O</p>
                     <P class="nome-convite">Nome</P>
@@ -95,10 +95,12 @@
                 
             </ul>
         </main>
+        <footer>
+            <p class="copyright">&copy; Copyright Gustavo Finger - 2020</p>
+        </footer>
     </body>
-    <footer>
-        <p class="copyright">&copy; Copyright Gustavo Finger - 2020</p>
-    </footer>
-    <script src="index.js"></script>
+    
+    <script src="adicionar_na_tabela.js"></script>
     <script src="gerar_convite.js"></script>
+    <script src="remover_convidado.js"></script>
     </html>
