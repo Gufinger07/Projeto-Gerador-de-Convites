@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(red, orange);
-   
+    background-color: silver;
+    height: 100%;
 }
 .li-aniversariante, .li-convidado, .li-lista {
     
@@ -14,6 +14,7 @@ body {
     background-image: url("fundo_form.png") 
 }
 .ul-dados {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,12 +23,12 @@ body {
 h1 {
     text-align: center;
     color: rgb(221, 51, 28);
-    font-size: 35px;
+    font-size: 2.5em;
     padding: 15px;
     background-color: black;
 }
 img {
-    width: 2%;
+    width: 40px;
 }
 #aniversariante-form ,#data-form, #local-form, #idade-form,#nome-form, #hora-form, #opcao-form{
     padding: 15px;
@@ -83,6 +84,7 @@ th{
     border-radius: 10px;
     
     
+    
 }
 .nome-convite {
     font-size: 50px;
@@ -90,18 +92,6 @@ th{
 .idade-convite {
     font-size: 30px;
     padding-left: 50px;
-    
-}
-
-
-footer {
-    text-align: center;
-    color: rgb(221, 51, 28);
-    font-size: 15px;
-    padding: 5px;
-    background-color: black;
-    align-self: flex-end;
-    
     
 }
 .local-convite {

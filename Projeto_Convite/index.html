@@ -4,15 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gerador de Convites</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href=".//css/index.css">
+        <link rel="stylesheet" href=".//css/responsivo.css">
         
 
     </head>
     <body>
         <header>
-            <h1><img class="imagem-convite" src="convite.png" alt=""> Gerador de Convites   
-            <img class="imagem-convite" src="convite.png" alt=""></h1>           
+            <h1><img class="imagem-convite" src="img/convite.png" alt=""> Gerador de Convites   
+            <img class="imagem-convite" src="img/convite.png" alt=""></h1>           
         </header>
         <main>
             <ul class="ul-dados">
@@ -49,6 +50,15 @@
                         <p class="mensagem-erro"></p>
                                 
                 </li>
+                <li id="fazendo-convite" >
+                    <p>A N I V E R S Á R I O</p>
+                    <P class="nome-convite">Nome</P>
+                    <p class="idade-convite"><strong id="idade-mudavel">X</strong> anos </p>
+                    <p class="data-convite">Data</p>
+                    <p class="hora-convite">Horario</p>
+                    <p class="local-convite">Local</p>
+                    
+                </li>
                 <li class="li-convidado">
                     <h3>Adicionar novo convidado</h3>
                     <form id="form-adiciona">
@@ -83,24 +93,11 @@
                         </tbody>
                     </table>
                 </li>
-                <li id="fazendo-convite" >
-                    <p>A N I V E R S Á R I O</p>
-                    <P class="nome-convite">Nome</P>
-                    <p class="idade-convite"><strong id="idade-mudavel">X</strong> anos </p>
-                    <p class="data-convite">Data</p>
-                    <p class="hora-convite">Horario</p>
-                    <p class="local-convite">Local</p>
-                    
-                </li>
                 
             </ul>
         </main>
-        <footer>
-            <p class="copyright">&copy; Copyright Gustavo Finger - 2020</p>
-        </footer>
     </body>
-    
-    <script src="adicionar_na_tabela.js"></script>
-    <script src="gerar_convite.js"></script>
-    <script src="remover_convidado.js"></script>
-    </html>
+    <script src="js/adicionar_na_tabela.js"></script>
+    <script src="js/gerar_convite.js"></script>
+    <script src="js/remover_convidado.js"></script>
+</html>

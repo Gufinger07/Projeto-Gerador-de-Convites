@@ -5,7 +5,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var form = document.querySelector("#form-adiciona");
 
     var convidado = obtemconvidadoDoFormulario(form);
-
+    
     adicionaConvidadoNaTabela(convidado);
 
     form.reset();
